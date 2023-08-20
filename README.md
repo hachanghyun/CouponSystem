@@ -23,4 +23,24 @@
 #### CountDownLatch 
     CountDownLatch는 어떤 쓰레드가 다른 쓰레드에서 작업이 완료될 때 까지 기다릴 수 있도록 해주는 클래스입니다.
 
-#### docker exec -it d20e124e6234 redis-cli
+#### redis 
+    docker exec -it d20e124e6234 redis-cli
+    incr coupon_count # 실행
+    flushall # redis 테스트 데이터 초기화
+    
+#### redis 싱글스레드방식
+
+#### kafka 실습
+    mkdir kafka
+    cd kafka
+    vim docker-compose.yml #노션에 있는 명령어 복사해서 붙여넣기
+    docker-compose up -d
+
+    위의 그림을 보면 가운데 카프카를 기준으로 양옆에 Producer 와 Consumer 가 있다. Producer는 실시간으로 데이터를 Kafka에 보내는 놈이고, Consumer는 Kafka에 있는 데이터를 가져다 쓰는 것이라 생각하면된다. 그리고 Kafka 내부에는 Topic이라는게 있는데 각각의 목적을 가진 큐라고 생각하면된다. (더 쉽게 이해하시려면 데이터 베이스의 테이블 역할을 한다 생각하시면 된다.)
+<img width="916" alt="스크린샷 2023-08-20 오전 10 34 01" src="https://github.com/hachanghyun/CouponSystem/assets/33058284/515fd380-d1f6-4f6d-9d71-1d1b26ae0d52">
+위 producer 아래 consumer 
+producer가 보낸 값을 consumer가 받는것을 볼수있음
+
+
+
+    
