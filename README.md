@@ -22,3 +22,5 @@
 
 #### CountDownLatch 
     CountDownLatch는 어떤 쓰레드가 다른 쓰레드에서 작업이 완료될 때 까지 기다릴 수 있도록 해주는 클래스입니다.
+
+#### docker exec -it d20e124e6234 redis-cli
