@@ -1,4 +1,4 @@
-package com.example.couponssystems.domain;
+package com.example.api.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +12,8 @@ public class Coupon {
     private Long id;
 
     private Long userId;
+
+    private Long couponType;
 
     public Coupon() {
     }
